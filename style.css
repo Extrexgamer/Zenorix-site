@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: Arial;
-  background: linear-gradient(to bottom, #021f1f, #001111);
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0a2e2e, #000);
   color: white;
   text-align: center;
 }
@@ -12,70 +12,77 @@ body {
 }
 
 .hero h1 {
-  font-size: 55px;
-  letter-spacing: 6px;
+  font-size: 60px;
+  letter-spacing: 8px;
   text-transform: uppercase;
-  background: linear-gradient(to right, #00ffaa, #00aaff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #00ffc3;
+  text-shadow: 0 0 20px rgba(0,255,195,0.7);
 }
 
 .hero p {
-  color: #ccc;
+  color: #bbb;
   margin-top: 10px;
+  font-size: 16px;
 }
 
 /* BUTTONS */
 .buttons a {
   display: inline-block;
-  padding: 12px 25px;
+  padding: 12px 28px;
   margin: 15px 10px;
   border-radius: 30px;
   text-decoration: none;
   color: white;
-  border: 1px solid #00ffaa;
+  border: 1px solid #00ffc3;
   transition: 0.3s;
 }
 
 .buttons a:first-child {
-  background: linear-gradient(to right, #00ffaa, #00aaff);
+  background: linear-gradient(to right, #00ffc3, #0099ff);
+}
+
+.buttons a:last-child {
+  border-color: #7289da;
 }
 
 .buttons a:hover {
   transform: scale(1.08);
-  box-shadow: 0 0 20px #00ffaa;
+  box-shadow: 0 0 20px #00ffc3;
 }
 
-/* THUMBNAILS SECTION */
+/* THUMBNAILS */
 .thumbnails {
   padding: 40px 20px 80px;
 }
 
 .thumbnails h2 {
   margin-bottom: 30px;
-  color: #ddd;
+  color: #ccc;
+  font-weight: 400;
 }
 
-/* GRID FIX */
+/* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
   max-width: 1000px;
   margin: auto;
 }
 
-/* IMAGE STYLE (MAIN FIX) */
+/* IMAGES */
 .grid img {
   width: 100%;
-  height: 150px;
+  height: 160px;
   object-fit: cover;
   border-radius: 20px;
   transition: 0.3s;
+  border: 2px solid transparent;
 }
 
 /* HOVER EFFECT */
 .grid img:hover {
   transform: scale(1.07);
-  box-shadow: 0 0 25px #00ffaa;
+  border: 2px solid #00ffc3;
+  box-shadow: 0 0 25px #00ffc3;
 }
